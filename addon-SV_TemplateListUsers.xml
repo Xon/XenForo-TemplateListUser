@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="SV_TemplateListUsers" title="Template List Users" version_string="1.0.0" version_id="1000000" url="" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners>
+    <listener event_id="template_hook" execute_order="10" callback_class="SV_TemplateListUsers_Listener" callback_method="template_hook" active="1" hint="sv_list_users" description="sv_list_users template hook"/>
+  </code_event_listeners>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups/>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases/>
+  <route_prefixes/>
+  <style_properties/>
+  <templates>
+    <template title="SVUserInfo" version_id="1000000" version_string="1.0.0"><![CDATA[<li>
+	<xen:avatar user="$user" size="s" img="true" class="NoOverlay" />
+	<br>
+	<xen:username user="$user" />
+</li>]]></template>
+  </templates>
+  <public_template_modifications/>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
